@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda online </title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <div> <h1>Verificar compra</h1> </div>
+        
+    </header>
+    <section id="cart-review">
+        <h2>Revisión del Carrito</h2>
+        <p>Por favor, verifica los productos seleccionados en tu carrito 
+            antes de confirmar la orden.</p>
+        <!-- Aquí iría el contenido del carrito -->
+        <div class="product">
+            <img src="producto1.jpg" alt="Producto 1">
+            <span>Producto 1</span>
+            <div class="nameproduct"> <h3>Nombre producto</h3></div>
+            <button type="button">Eliminar</button>
+        </div>
+        <div class="product">
+            <img src="producto2.jpg" alt="Producto 2">
+            <span>Producto 2</span>
+            <div class="nameproduct"> <h3>Nombre producto</h3></div>
+            <button type="button">Eliminar</button>
+        </div>
+        <div class="product">
+            <img src="producto3.jpg" alt="Producto 3">
+            <span>Producto 3</span>
+            <div class="nameproduct"> <h3>Nombre producto</h3></div>
+            <button type="button">Eliminar</button>
+        </div>
+        <div id="total">
+            Total a pagar: $100
+        </div>
+        <button type="button" class="confirm-button" onclick="confirmarCarrito()">Confirmar carrito</button>
+    </section>
+    <script>
+        function confirmarCarrito() {
+            // Va la acción deseada al confirmar el carrito
+        }
+    </script>
+    <section id="order-confirmation">
+        <h2>Confirmación de la Orden</h2>
+        <p>Por favor, revisa los detalles de tu orden antes de confirmarla.</p>
+        <!-- Aquí iría el resumen detallado de la orden -->
+        <img src="producto1.jpg" alt="Producto 1">
+        <div>
+            <h3>Nombre del Producto</h3>
+            <p>Información del Producto</p>
+        </div>
+        <img src="producto2.jpg" alt="Producto 2">
+        <div>
+            <h3>Nombre del Producto</h3>
+            <p>Información del Producto</p>
+        </div>
+        <button type="button" onclick="confirmarOrden()">Confirmar orden</button>
+        <p>Estado pedido: Pendiente</p> <!-- Este campo se actualizará con el estado del pedido -->
+    </section>
+
+    <section class="formregistrar" id="data-verification"> 
+            <h2>Verificación de Datos</h2>
+            <p>Antes de confirmar la orden, verifica la dirección de envío y los detalles de pago.</p>
+            <form class="form-container">
+                <label for="names">Nombre completo:</label>
+                <input class="controls" type="text" placeholder="Ingrese su nombre"id="names" name="usuarname">
+                <label for="surnames">Apellidos completos:</label>
+                <input class="controls"type="text" placeholder="Ingrese sus apellidos"id="surnames" name="usuarsurnames">
+                <label for="phone">Telefono:</label>
+                <input class="controls"type="num" placeholder="Ingrese su celular"id="phone"name="usuarphone">
+                <label for="address">Dirección:</label>
+                <input class="controls"type="text" placeholder="Ingrese su direccion"id="address"name="usuaraddress">
+                <label for="municipality">Municipio:</label>
+                <input class="controls"type="text" placeholder="Ingrese su municipio"id="municipality"name="usuarmunicipality">
+                <label for="department">Departamento:</label>
+                <input class="controls"type="text" placeholder="Ingrese su departamento"id="department"name="usuardepartment">
+                <label for="document">Número de documento:</label>
+                <input class="controls"type="text" placeholder="Numero de documento "id="document"name="usuardocument">
+                <label for="email">Correo electrónico:</label>
+                <input class="controls"type="email" placeholder="Ingrese su correo"id="email"name="usuaremail">
+                <label for="date">Fecha de nacimiento:</label>
+                <input class="controls"type="date" id="date"name="usuarbirthdate">
+
+                <input class="button"type="submit" value="Confirmar datos">
+            </form>         
+    </section>
+
+    <section id="final-confirmation">
+            <h2>  Confirmación</Confirmaci> Final</h2>
+            <button type="button">Confirmar compra</button>
+    </section>
+</body>
+</html>

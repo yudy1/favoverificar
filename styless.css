@@ -1,0 +1,135 @@
+h1{
+    color: #ffff00e6;
+    font-style: undeline;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(26, 154, 224);
+}
+#cart-review {
+    max-width: 600px;
+    margin: 10 auto;
+    padding: 20px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.product button {
+    margin-top: 0px;
+    background-color: rgb(204, 41, 204);
+    color: rgb(0, 0, 0);
+    border-radius: 12px; 
+    padding: 10px 20px;
+}
+#total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.confirm-button {
+    background-color: rgb(13, 203, 156);
+    color: rgb(0, 0, 0);
+    border-radius: 12px; 
+    padding: 10px 20px;
+}
+#order-confirmation {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#order-confirmation img {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+#order-confirmation button {
+    background-color: green;
+    color: white;
+    border-radius: 12px; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1px);
+    grid-gap: 10px;
+}
+
+.form-container label {
+    grid-column: span 10;
+}
+
+.form-container input {
+    grid-column: span 15;
+}
+*{
+    margin: 0;
+    padding: 100;
+    box-sizing: border-box;
+}
+.formregistrar{
+    width: 400px;
+    background-color: rgb(234, 234, 234);
+    padding: 30;
+    margin: 0%;
+    margin-top: 100;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: rgb(0, 0, 0);
+}
+.controls{
+    width: 55%;
+    background-color: rgb(195, 200, 51);
+    padding: 5px 0px 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px color rgb(201, 23, 13);
+    font-family: "calibri";
+    font-size: 18px;
+}
+.button{
+    width: 50%;
+    background-color: rgb(59, 255, 79);
+    border: none;
+    border-radius: 12px; 
+    padding: 12px;
+    color: black;
+    margin: 16px;
+    font-size: 16px;
+}
+#final-confirmation {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+#final-confirmation button {
+    background-color: green;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 12px; /* Bordes redondos */
+    font-family: Arial, sans-serif; 
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#final-confirmation button:hover {
+    background-color: darkgreen;
+}
