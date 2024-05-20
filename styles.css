@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+header {
+    position: relative; /* Para que los elementos hijos posicionados se ajusten a este */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+    background-color:  #0a2e88f7;
+    border-bottom: 1px solid #fff6f6;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center; /* Centra horizontalmente */
+    flex-grow: 1; /* Permite que el h1 crezca y ocupe el espacio restante */
+    color: yellow;
+}
+
+#button-container {
+    display: flex;
+    gap: 10px;
+}
+
+#login-btn, #manage-favorites-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#login-btn {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 18px; 
+    margin-right: 20px;
+}
+
+#login-btn:hover {
+    background-color: #1934e0;
+}
+
+#manage-favorites-btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 18px; 
+    margin-right: 50px;
+}
+
+#manage-favorites-btn:hover {
+    background-color: #218838;
+}
+
+#login-form {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+    color: #00aab3;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #1a769a;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Ajusta según tus necesidades */
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* Ajusta según tus necesidades */
+    object-fit: cover;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.favorite {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+
+
+
+
